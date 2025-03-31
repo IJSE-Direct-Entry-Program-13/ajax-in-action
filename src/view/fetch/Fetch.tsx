@@ -1,4 +1,4 @@
-import './Xhr.css';
+import './Fetch.css';
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router";
 
@@ -8,24 +8,25 @@ type Customer = {
     address: string
 }
 
-function Xhr() {
+function Fetch() {
     const [customerList, setCustomerList] = useState<Customer[]>([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        const xhr = new XMLHttpRequest();
-        xhr.addEventListener('loadend', () => {
-            if (xhr.status === 200) {
-                setCustomerList(JSON.parse(xhr.responseText));
-            }
-        });
-        xhr.open('GET', 'http://localhost:8080/app/customers', true);
-        xhr.send();
+
+        async function getAllCustomers(){
+            const response = await
+                fetch('http://localhost:8080/app/customers');
+            setCustomerList(await response.json());
+        }
+
+        getAllCustomers();
+
     }, []);
 
     return (
         <div className='p-2 text-center'>
-            <h1>Xhr in Action</h1>
+            <h1>Fetch in Action</h1>
             <table className='table table-hover table-bordered'>
                 <thead>
                 <tr>
@@ -54,4 +55,4 @@ function Xhr() {
     );
 }
 
-export default Xhr;
+export default Fetch;
