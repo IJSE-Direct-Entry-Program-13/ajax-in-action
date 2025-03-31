@@ -8,7 +8,7 @@ function Main() {
             <ul className='list-unstyled'>
                 <li className='p-2'><Link to='/xhr'>XmlHttpRequest (XHR) Api</Link></li>
                 <li className='p-2'><Link to='/fetch'>Fetch Api</Link></li>
-                <li className='p-2'>jQuery Ajax Api</li>
+                <li className='p-2'><Link to='/jquery-ajax'>jQuery Ajax Api</Link></li>
                 <li className='p-2'>Axios Api</li>
             </ul>
         </div>
