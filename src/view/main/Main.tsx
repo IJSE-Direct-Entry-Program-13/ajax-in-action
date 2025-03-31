@@ -2,15 +2,15 @@ import './Main.css';
 
 function Main() {
     return (
-        <>
-        <h1>Ajax in Action</h1>
-            <ul>
-                <li><a href="">XmlHttpRequest (XHR) Api</a></li>
-                <li><a href="">Fetch Api</a></li>
-                <li><a href="">jQuery Ajax Api</a></li>
-                <li><a href="">Axios Api</a></li>
+        <div className='text-center'>
+        <h1 className='p-2'>Ajax in Action</h1>
+            <ul className='list-unstyled'>
+                <li className='p-2'><a href="">XmlHttpRequest (XHR) Api</a></li>
+                <li className='p-2'><a href="">Fetch Api</a></li>
+                <li className='p-2'><a href="">jQuery Ajax Api</a></li>
+                <li className='p-2'><a href="">Axios Api</a></li>
             </ul>
-        </>
+        </div>
     );
 }
 
