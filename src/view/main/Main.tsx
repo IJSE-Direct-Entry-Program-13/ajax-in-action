@@ -9,7 +9,7 @@ function Main() {
                 <li className='p-2'><Link to='/xhr'>XmlHttpRequest (XHR) Api</Link></li>
                 <li className='p-2'><Link to='/fetch'>Fetch Api</Link></li>
                 <li className='p-2'><Link to='/jquery-ajax'>jQuery Ajax Api</Link></li>
-                <li className='p-2'>Axios Api</li>
+                <li className='p-2'><Link to='/axios'>Axios Api</Link></li>
             </ul>
         </div>
     );

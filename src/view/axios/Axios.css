@@ -1,0 +1,7 @@
+.bi.bi-trash{
+    cursor: pointer;
+
+    &:hover {
+        color: red;
+    }
+}
