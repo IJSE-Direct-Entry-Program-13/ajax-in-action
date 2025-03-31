@@ -1,6 +1,7 @@
 import './App.css'
 import {createBrowserRouter, Navigate, RouteObject, RouterProvider} from "react-router";
 import Main from "./view/main/Main.tsx";
+import Xhr from "./view/xhr/Xhr.tsx";
 
 type Routes = RouteObject[];
 const routes: Routes = [
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'main',
     Component: Main
+  },
+  {
+    path: 'xhr',
+    Component: Xhr
   }
 ];
 const router = createBrowserRouter(routes);
